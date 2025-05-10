@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+
+* {
+  overflow-x: unset;
+  user-select: none;
+
+}
+
+.navbar {
+  background-color: rgb(29, 27, 52);
+  color: white;
+
+}
+
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #fff;
+  padding-bottom: 4px;
+  transition: color 0.3s;
+}
+
+.navbar-nav .nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background-color: #fff;
+  transition: width 0.3s ease-in-out;
+}
+
+
+.navbar-nav .nav-link.active::after {
+  width: 100%;
+}
+
+.button-purchase {
+  background-color: white;
+  color: black;
+  font-weight: 600;
+  font-family: 'Poppins', sans-serif;
+  border-radius: 16px;
+  padding: 10px 24px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* .lik:hover {
+  background-color: "#7A5AF8";
+  color: black;
+  transition: 0.1s;
+} */
+
+.social-icon:hover svg {
+  background-color: #7A5AF8;
+  color: "white";
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.service-box {
+  transition: background-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.service-box:hover {
+  background-color: #7A5AF8;
+  /* violet-like color */
+  color: white;
+}
+
+.service-box:hover h5,
+.service-box:hover p,
+.service-box:hover i {
+  color: white !important;
+}
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+
+  .non {
+    display: none;
+  }
+
+  #second {
+    display: none;
+  }
+}
