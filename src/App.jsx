@@ -81,19 +81,19 @@ function App() {
                 <div className="d-flex justify-content-center gap-3 mt-2">
                   <div className="social-icons d-flex flex-row justify-content-between gap-2">
                     <a
-                      href="#"
+                      href='https://instagram.com/sanjai_kumar.95?igshid=MzMyNGUyNmU2YQ=='
                       className="social-icon bg-light text-dark "
                     >
                       <InstagramIcon />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                       className="social-icon bg-light text-dark"
                     >
                       <FacebookIcon />
                     </a>
                     <a
-                      href="#"
+                      href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                       className="social-icon bg-light text-dark"
                     >
                       <LinkedInIcon />
@@ -395,19 +395,19 @@ function App() {
               <div className="d-flex justify-content-center gap-3 mt-2">
                 <div className="social-icons d-flex flex-row justify-content-between gap-2">
                   <a
-                    href="#"
+                    href='https://instagram.com/sanjai_kumar.95?igshid=MzMyNGUyNmU2YQ=='
                     className="social-icon bg-light text-dark "
                   >
                     <InstagramIcon />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     className="social-icon bg-light text-dark"
                   >
                     <FacebookIcon />
                   </a>
                   <a
-                    href="#"
+                    href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
                     className="social-icon bg-light text-dark"
                   >
                     <LinkedInIcon />
