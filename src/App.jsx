@@ -14,7 +14,8 @@ import MetaBalls from './assets/MetalBalls'
 import ArticleIcon from '@mui/icons-material/Article';
 import ProjectsPage from './assets/projects'
 import CircularText from './assets/circularText'
-
+import resume from "./assets/sanjai.pdf"
+import GitHubIcon from '@mui/icons-material/GitHub';
 
 
 
@@ -29,7 +30,8 @@ function App() {
 
         width: "100vw",
         background: "rgb(29, 27, 52)",
-        overflowX: "hidden"
+        overflowX: "hidden",
+        zIndex: "4"
       }} class="position-fixed top-0 text-white">
         <Navbar />
       </div>
@@ -64,13 +66,13 @@ function App() {
               </p>
 
               <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
-                <button style={{
+                <a href="https://wa.me/919597134654" target="_blank" style={{
                   background: "#7A5AF8",
                   color: "white",
                   borderRadius: "12px"
                 }} className="btn  px-4 py-2 fw-semibold glow-button">
                   Say Hello < SendIcon />
-                </button>
+                </a>
                 <button style={{ borderRadius: "12px" }} className="btn btn-outline-light  px-4 py-2 fw-semibold">
                   My Works <ArrowOutwardIcon />
                 </button>
@@ -82,21 +84,28 @@ function App() {
                   <div className="social-icons d-flex flex-row justify-content-between gap-2">
                     <a
                       href='https://instagram.com/sanjai_kumar.95?igshid=MzMyNGUyNmU2YQ=='
-                      className="social-icon bg-light text-dark "
+                      className="social-icon bg-light text-dark " target="# "
                     >
                       <InstagramIcon />
                     </a>
                     <a
-                      href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                      href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="# "
                       className="social-icon bg-light text-dark"
                     >
                       <FacebookIcon />
                     </a>
                     <a
                       href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                      className="social-icon bg-light text-dark"
+                      className="social-icon bg-light text-dark" target="# "
                     >
                       <LinkedInIcon />
+                    </a>
+
+                    <a
+                      href="https://github.com/stackDeveloper95"
+                      className="social-icon bg-light text-dark" target="# "
+                    >
+                      <GitHubIcon />
                     </a>
                   </div>
 
@@ -183,7 +192,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div id="about" className="container-fluid py-5 p-5" style={{ backgroundColor: '#6a4bc4', width: "100vw", height: "400px", overflow: "hidden" }}>
+      <div id="about" className="container-fluid py-5 p-5" style={{ backgroundColor: '#6a4bc4', width: "100vw", height: "100%", overflow: "hidden" }}>
         <div className="row align-items-center justify-content-center">
           {/* Left side - Experience */}
           <div className="col-md-5 text-center text-md-start mb-4 mb-md-0">
@@ -206,7 +215,7 @@ function App() {
           {/* Right side - About Me Content */}
           <div className="col-md-6 text-white">
             <h2 className="fw-bold display-5 mb-3">
-              About Me <span className="border-bottom border-white d-inline-block" style={{ width: '50px', height: '3px', marginLeft: '10px' }}></span>
+              About Me <span className="border-bottom border-white d-inline-block" style={{ width: '50px', height: '3px', marginLeft: '10px', fontSize: "10rem" }}></span>
             </h2>
             <p className="fs-5 mb-4 text-light">
               I'm Sanjai, a passionate and curious web developer with 3 years of hands-on learning and building projects. I love turning ideas into interactive experiences and constantly push myself to improve my skills in frontend and backend technologies.
@@ -214,7 +223,7 @@ function App() {
 
             <div className="d-flex align-items-center gap-4 flex-wrap">
 
-              <a href="#" className="btn btn-light fw-bold px-4 py-2  d-flex align-items-center gap-2" style={{ borderRadius: "12px" }}>
+              <a href="https://drive.google.com/file/d/1OfVsxcD_nOYyfIpcgJ3VND65FNi0ZBh3/view?usp=drive_link" target="blank" download className="btn btn-light fw-bold px-4 py-2  d-flex align-items-center gap-2" style={{ borderRadius: "12px" }}>
                 Download CV
                 <i className="bi bi-download"><ArticleIcon /></i>
               </a>
@@ -238,9 +247,12 @@ function App() {
             {/* <p className="text-light fs-5">
               You can customize a template or make your own from scratch, with an immersive library at your disposal.
             </p> */}
-            <button className="btn btn-primary fw-bold px-4 py-2 mt-3" style={{ backgroundColor: '#7B4EF7', border: 'none', borderRadius: '12px' }}>
-              My Resume <i className="bi bi-download ms-2"></i>
-            </button>
+            <a href="https://drive.google.com/file/d/1OfVsxcD_nOYyfIpcgJ3VND65FNi0ZBh3/view?usp=drive_link" target="blank" download className="btn btn-primary fw-bold px-4 py-2 mt-3" style={{ backgroundColor: '#7B4EF7', border: 'none', borderRadius: '12px' }}>
+
+              Download Resume
+
+              <i className="bi bi-download ms-2"></i>
+            </a>
           </div>
 
           {/* Right Column */}
@@ -322,7 +334,7 @@ function App() {
         </div>
       </section>
 
-      <div id="projects" className="py-5 px-4" style={{ width: "100vw", backgroundColor: "#f9b233", height: "500px", paddingTop: "50px" }} >
+      <div id="projects" className="py-5 px-4" style={{ width: "100vw", backgroundColor: "#f9b233", height: "100%", paddingTop: "50px" }} >
         <ProjectsPage />
 
       </div>
@@ -367,7 +379,7 @@ function App() {
 
           {/* Right CTA Button */}
           <div>
-            <a href="mailto:support@sanjai.dev">
+            <a href="mailto:r.m.sanjai95@gmail.com">
               <button style={{
                 background: "#7A5AF8",
                 color: "white",
@@ -396,19 +408,19 @@ function App() {
                 <div className="social-icons d-flex flex-row justify-content-between gap-2">
                   <a
                     href='https://instagram.com/sanjai_kumar.95?igshid=MzMyNGUyNmU2YQ=='
-                    className="social-icon bg-light text-dark "
+                    className="social-icon bg-light text-dark " target="# "
                   >
                     <InstagramIcon />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    className="social-icon bg-light text-dark"
+                    className="social-icon bg-light text-dark" target="# "
                   >
                     <FacebookIcon />
                   </a>
                   <a
                     href="https://www.linkedin.com/in/sanjai-kumar-r-102365294?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    className="social-icon bg-light text-dark"
+                    className="social-icon bg-light text-dark" target="# "
                   >
                     <LinkedInIcon />
                   </a>

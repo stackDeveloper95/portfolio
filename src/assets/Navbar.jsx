@@ -49,7 +49,9 @@ const Navbar = () => {
 
                     </div>
 
-                    <button className="non button-purchase">Contact Now</button>
+                    {/* <a href="https://wa.me/919597134654" target="_blank" className="non btn btn-light button-purchase" >
+                        Contact Me
+                    </a> */}
                 </div>
             </nav>
         </>
