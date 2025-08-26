@@ -58,12 +58,20 @@ function App() {
           >
             <div className="profile-card text-center">
               <h1 className="fw-bold display-4 mb-2">
-                sanjai kumar <span role="img" aria-label="wave"></span>
+                Sanjai Kumar <span role="img" aria-label="wave"></span>
               </h1>
-              <h2 className="text-info mb-3 fs-4"> <span className="border-bottom border-white d-inline-block" style={{ width: '50px', height: '3px', marginLeft: '10px' }}></span> Web Developer</h2>
+              <h2 className="text-info mb-3 fs-4">
+                <span
+                  className="border-bottom border-white d-inline-block"
+                  style={{ width: '50px', height: '3px', marginLeft: '10px' }}
+                ></span>
+                Software Developer
+              </h2>
               <p className="text-secondary fs-6 px-md-4 mb-4">
-                I'm a passionate web developer based in India, dedicated to building fast, responsive, and user-friendly websites and applications.
+                I'm a passionate software developer from India, focused on creating efficient, scalable, and innovative solutions that deliver seamless digital experiences across web and mobile platforms.
               </p>
+
+
 
               <div className="d-flex justify-content-center gap-3 flex-wrap mb-4">
                 <a href="https://wa.me/919597134654" target="_blank" style={{
