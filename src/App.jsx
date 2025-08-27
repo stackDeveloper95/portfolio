@@ -339,6 +339,8 @@ function App() {
             </div>
             <i class="bi bi-box-arrow-up-right fs-4 text-light"></i>
           </div>
+
+
         </div>
       </section>
 
@@ -387,7 +389,8 @@ function App() {
 
           {/* Right CTA Button */}
           <div>
-            <a href="mailto:r.m.sanjai95@gmail.com">
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=r.m.sanjai95@gmail.com" target="_blank">
+
               <button style={{
                 background: "#7A5AF8",
                 color: "white",

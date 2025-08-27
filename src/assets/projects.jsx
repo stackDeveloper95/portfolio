@@ -53,10 +53,11 @@ const ProjectsPage = () => {
                             <div className="d-flex flex-column align-items-center text-center p-4">
                                 <img
                                     src={project.imgSrc}
-                                    className="d-block mb-4"
+                                    className="d-block mb-4 img-fluid"
                                     alt={project.title}
-                                    style={{ height: '300px', borderRadius: '10px', objectFit: 'cover' }}
+                                    style={{ maxHeight: '300px', borderRadius: '10px', objectFit: 'cover' }}
                                 />
+
                                 <h3>{project.title}</h3>
                                 <p className="px-3" style={{ maxWidth: "700px" }}>{project.description}</p>
                                 <p><strong>Framework:</strong> {project.framework}</p>
