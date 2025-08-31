@@ -33,7 +33,7 @@ const ProjectsPage = () => {
             title: 'Aluminium AI Strength Predictor',
             description: 'Mobile app that predicts aluminium strength based on composition percentages, powered by AI models.',
             imgSrc: alu,
-            link: '#',
+            link: 'https://expo.dev/artifacts/eas/jfoKWLcCf7rThERwCFxhVr.apk',
             framework: 'React Native + Flask',
             techStack: 'React Native, Flask API, Python (Scikit-learn), Random Forest, Multiple Regression, Expo',
         }

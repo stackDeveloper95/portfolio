@@ -37,7 +37,7 @@ function App() {
       </div>
       <div
         id="home"
-        className="col-sm-6 col-lg-6 d-flex align-items-center justify-content-between gap-4 p-5"
+        className="col-sm-6 col-lg-6 col-md-6 d-flex align-items-center justify-content-between gap-4 p-5"
         style={{
           height: "100vh",
           width: "100vw",
@@ -187,7 +187,7 @@ function App() {
                 speed={0.3}
               />
 
-              <div style={{ position: "absolute", top: "600px", left: "1250px", height: "210px", width: "210px", borderRadius: "50%", backgroundColor: "black", boxShadow: " rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", opacity: "0.5" }}>
+              <div style={{ position: "relative", top: "-100px", left: "450px", height: "210px", width: "210px", borderRadius: "50%", backgroundColor: "black", boxShadow: " rgba(100, 100, 111, 0.2) 0px 7px 29px 0px", opacity: "0.5" }}>
                 <CircularText
                   text="welcome*to*My Page*"
                   onHover="speedUp"
@@ -276,7 +276,7 @@ function App() {
                 { icon: '', label: 'Java', value: '90%' },
                 { icon: '', label: 'Python', value: '85%' },
                 { icon: '', label: 'Java Script', value: '95%' },
-                { icon: '', label: 'MernStack Development', value: '95%' },
+                { icon: '', label: 'Web Development', value: '95%' },
                 { icon: '', label: 'Machine Learning', value: '80%' },
                 { icon: '', label: 'Gen AI', value: '75%' },
               ].map((skill, i) => (
