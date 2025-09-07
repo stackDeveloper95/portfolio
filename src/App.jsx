@@ -16,6 +16,7 @@ import ProjectsPage from './assets/projects'
 import CircularText from './assets/circularText'
 import resume from "./assets/sanjai.pdf"
 import GitHubIcon from '@mui/icons-material/GitHub';
+import SkillsSlider from './assets/SkillsSlider'
 
 
 
@@ -28,7 +29,7 @@ function App() {
 
       <div style={{
 
-        width: "100vw",
+        width: "100%",
         background: "rgb(29, 27, 52)",
         overflowX: "hidden",
         zIndex: "4"
@@ -266,13 +267,14 @@ function App() {
           {/* Right Column */}
           <div className="col-md-7">
             <div className="d-flex justify-content-start gap-4 mb-4 flex-wrap">
-              <button className="btn btn-outline-light px-4 py-2 rounded-pill border-white text-white fw-semibold">Skills <ArrowOutwardIcon /></button>
+              {/* <button className="btn btn-outline-light px-4 py-2 rounded-pill border-white text-white fw-semibold">Skills <ArrowOutwardIcon /></button> */}
               {/* <button className="btn btn-outline-light px-4 py-2 rounded-pill border-0 text-white fw-semibold">Experience ↗</button>
               <button className="btn btn-outline-light px-4 py-2 rounded-pill border-0 text-white fw-semibold">Education ↗</button> */}
             </div>
 
-            <div className="row row-cols-2 row-cols-md-3 g-4">
-              {[
+            <div className=" row row-cols-3 row-cols-md-3 g-4">
+              <SkillsSlider />
+              {/* {[
                 { icon: '', label: 'Java', value: '90%' },
                 { icon: '', label: 'Python', value: '85%' },
                 { icon: '', label: 'Java Script', value: '95%' },
@@ -298,7 +300,7 @@ function App() {
                     <span className="fw-semibold">{skill.label} <strong>({skill.value})</strong></span>
                   </div>
                 </div>
-              ))}
+              ))} */}
             </div>
           </div>
         </div>
