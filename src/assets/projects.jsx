@@ -1,8 +1,12 @@
 import React from 'react';
+import Carousel from "react-multi-carousel";
+import "react-multi-carousel/lib/styles.css";
+
 import alu from "./alu.jpeg";
-import image from "./image.png"
-import campus from "./campus.png"
-import ther from "./ther.png"
+import image from "./image.png";
+import campus from "./campus.png";
+import ther from "./ther.png";
+
 const ProjectsPage = () => {
     const projects = [
         {
@@ -39,45 +43,52 @@ const ProjectsPage = () => {
         }
     ];
 
+    const responsive = {
+        superLargeDesktop: { breakpoint: { max: 4000, min: 3000 }, items: 3 },
+        desktop: { breakpoint: { max: 3000, min: 1024 }, items: 2 },
+        tablet: { breakpoint: { max: 1024, min: 464 }, items: 1 },
+        mobile: { breakpoint: { max: 464, min: 0 }, items: 1 },
+    };
+
     return (
-        <div className="container my-5" style={{ width: "90vw", borderRadius: "12px", padding: "30px" }}>
+        <div className=" container my-5" style={{ width: "95vw", borderRadius: "12px", padding: "30px" }}>
             <h2 className="text-center mb-4 fw-bold">
                 Look at my recent projects
-                <span className="d-block mx-auto border-bottom border-dark" style={{ width: '90px', paddingTop: "10px" }}></span>
+                <span
+                    className="d-block mx-auto border-bottom border-dark"
+                    style={{ width: '90px', paddingTop: "10px" }}
+                ></span>
             </h2>
 
-            <div id="carouselExampleFade" className="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div className="carousel-inner">
-                    {projects.map((project, index) => (
-                        <div key={index} className={`carousel-item ${index === 0 ? 'active' : ''}`}>
-                            <div className="d-flex flex-column align-items-center text-center p-4">
-                                <img
-                                    src={project.imgSrc}
-                                    className="d-block mb-4 img-fluid"
-                                    alt={project.title}
-                                    style={{ maxHeight: '300px', borderRadius: '10px', objectFit: 'cover' }}
-                                />
-
-                                <h3>{project.title}</h3>
-                                <p className="px-3" style={{ maxWidth: "700px" }}>{project.description}</p>
-                                <p><strong>Framework:</strong> {project.framework}</p>
-                                <p><strong>Tech Stack:</strong> {project.techStack}</p>
-                                <a href={project.link} target="_blank" className="btn btn-dark mt-2">View Details</a>
-                            </div>
+            <Carousel
+                responsive={responsive}
+                infinite={true}
+                autoPlay={true}
+                autoPlaySpeed={4000}
+                arrows={false}
+                showDots={true}
+                containerClass="pb-5"
+            >
+                {projects.map((project, index) => (
+                    <div key={index} className="p-3">
+                        <div className="d-flex flex-column align-items-center text-center shadow-sm p-4 rounded bg-light bg-transparent">
+                            <img
+                                src={project.imgSrc}
+                                alt={project.title}
+                                className="mb-4 img-fluid"
+                                style={{ maxHeight: "250px", borderRadius: "10px", objectFit: "cover" }}
+                            />
+                            <h3>{project.title}</h3>
+                            <p className="px-3" style={{ maxWidth: "700px" }}>{project.description}</p>
+                            <p><strong>Framework:</strong> {project.framework}</p>
+                            <p><strong>Tech Stack:</strong> {project.techStack}</p>
+                            <a href={project.link} target="_blank" rel="noreferrer" className="btn btn-dark mt-2">
+                                View Details
+                            </a>
                         </div>
-                    ))}
-                </div>
-
-                <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
-                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Previous</span>
-                </button>
-
-                <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
-                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span className="visually-hidden">Next</span>
-                </button>
-            </div>
+                    </div>
+                ))}
+            </Carousel>
         </div>
     );
 };
