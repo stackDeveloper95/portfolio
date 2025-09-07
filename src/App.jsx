@@ -46,11 +46,8 @@ function App() {
         }}
       >
         <div
-          className="d-flex m-4 align-items-start gap-4 flex-wrap justify-content-cente r"
-          style={{
-
-
-          }}
+          className="d-flex m-4 align-items-start gap-4 flex-wrap justify-content-cente"
+          style={{ minWidth: "330px" }}
 
         >
           <SpotlightCard
