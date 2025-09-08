@@ -204,7 +204,7 @@ function App() {
           <div className="col-md-5 text-center text-md-start mb-4 mb-md-0">
             <div style={{ color: '#f9b233', fontSize: '10rem', fontWeight: 'bold', lineHeight: '1', position: 'relative' }}>
               3
-              <div style={{ fontSize: '1.2rem', color: 'black', marginTop: '-1rem' }}>
+              <div style={{ fontSize: '1.2rem', color: 'black', marginTop: '1rem' }}>
                 Years of Learning
               </div>
               <div style={{
@@ -248,7 +248,7 @@ function App() {
               <span className="d-block mt-2" style={{ borderBottom: '2px solid white', width: '60px' }}></span>
             </h2>
             <p className="text-light fs-5">
-              I’m an expert in MERN stack web development, skilled in building full-stack applications using MongoDB, Express.js, React, and Node.js. I also have hands-on experience with React Native for cross-platform mobile development. My knowledge extends into Machine Learning and Generative AI, enabling me to craft intelligent, adaptive digital solutions. Whether you're looking for a powerful web app or an innovative AI-driven product, I bring both creativity and technical depth to every project.
+              I'm an expert in MERN stack web development, skilled in building full-stack applications using MongoDB, Express.js, React, and Node.js. I also have hands-on experience with React Native for cross-platform mobile development. My knowledge extends into Machine Learning and Generative AI, enabling me to craft intelligent, adaptive digital solutions. Whether you're looking for a powerful web app or an innovative AI-driven product, I bring both creativity and technical depth to every project.
             </p>
             {/* <p className="text-light fs-5">
               You can customize a template or make your own from scratch, with an immersive library at your disposal.
